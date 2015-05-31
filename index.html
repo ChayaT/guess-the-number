@@ -1,0 +1,16 @@
+<!doctype HTML>
+<title>Number Guessing Game</title>
+<script>
+var theNumber;
+function startNewGame() {
+  theNumber = Math.floor(Math.random() * 100);
+}
+
+function comapare(number) {
+  if (number < theNumber) return 'bigger';
+  if (number > theNumber) return 'smaller';
+  return 'same';
+}
+
+startNewGame();
+</script>
